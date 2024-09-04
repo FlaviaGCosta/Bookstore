@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Livros</h1>
+        <form id="livroForm">
+            <input type="text" id="nome" placeholder="Nome do Livro" required>
+            <textarea id="anotacao" placeholder="Anotação"></textarea>
+            <input type="number" id="nota" min="1" max="10" placeholder="Nota (1-10)" required>
+            <button type="submit">Salvar</button>
+        </form>
+
+        <h2>Livros Cadastrados</h2>
+        <table id="livrosList">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Anotação</th>
+                    <th>Nota</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
